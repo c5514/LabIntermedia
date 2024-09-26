@@ -7,8 +7,8 @@ def linear_func(x, m, c):
     return m * x + c
 
 file_path = "./Gap.xlsx"
-data = pd.read_excel(file_path, sheet_name="Germanio Direct", usecols=[2,3,4,6], skiprows=1, nrows=2459)
-# data = pd.read_excel(file_path, sheet_name="Silicio Direct", usecols=[2,3,4,6], skiprows=1, nrows=2459)
+# data = pd.read_excel(file_path, sheet_name="Germanio Direct", usecols=[2,3,4,6], skiprows=1, nrows=2459)
+data = pd.read_excel(file_path, sheet_name="Silicio Direct", usecols=[2,3,4,6], skiprows=1, nrows=2459)
 
 Yaxis = data.iloc[:, 0].values
 Xaxis = data.iloc[:, 1].values
@@ -34,8 +34,8 @@ plt.plot(Xaxis, linear_func(Xaxis, slope, intercept), color='blue', label='Ajust
 plt.errorbar(Xaxis, Yaxis, xerr=dX, yerr=dY, fmt='.', capsize=2)
 plt.xlabel('Potencial (V)')
 plt.ylabel('ln(I)')
-plt.title('Diodo de germanio')
-# plt.title('Diodo de silicio')
+# plt.title('Diodo de germanio')
+plt.title('Diodo de silicio')
 plt.legend()
 plt.grid(True)
 plt.show()

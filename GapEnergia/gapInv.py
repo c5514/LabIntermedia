@@ -7,9 +7,10 @@ def linear_func(x, m, c):
     return m * x + c
 
 file_path = "./Gap.xlsx"
-data = pd.read_excel(file_path, sheet_name="Germanio Inverse", usecols=[3,4,7,6], skiprows=1, nrows=2459)
+# data = pd.read_excel(file_path, sheet_name="Germanio Inverse", usecols=[3,4,7,6], skiprows=1, nrows=2459)
+# data = pd.read_excel(file_path, sheet_name="Germanio Inverse 2", usecols=[3,4,7,6], skiprows=1, nrows=2459)
 # data = pd.read_excel(file_path, sheet_name="Silicio Inverse", usecols=[3,4,7,6], skiprows=1, nrows=2459)
-
+data = pd.read_excel(file_path, sheet_name="Silicio Inverse 2", usecols=[3,4,7,6], skiprows=1, nrows=2459)
 Yaxis = data.iloc[:, 0].values
 Xaxis = data.iloc[:, 1].values
 
@@ -34,8 +35,8 @@ plt.plot(Xaxis, linear_func(Xaxis, slope, intercept), color='blue', label='Ajust
 plt.errorbar(Xaxis, Yaxis, yerr=dY, fmt='.', capsize=2)
 plt.xlabel('1/T (1/K)')
 plt.ylabel('ln(I0)')
-plt.title('Diodo de germanio invertido')
-# plt.title('Diodo de silicio invertido')
+# plt.title('Diodo de germanio invertido')
+plt.title('Diodo de silicio invertido')
 plt.legend()
 plt.grid(True)
 plt.show()
