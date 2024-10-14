@@ -1,7 +1,5 @@
 # Repositorio de Física Intermedia
 La organización de los experimentos es la siguiente:
-|
-├── GapEnergia/
-├── FranckHertz/
-├── CampoMagnético/
-└── README.md
+- Experimento 1: FranckHertz
+- Experimento 2: GapEnergia
+- Experimento 3: CampoMagnético
