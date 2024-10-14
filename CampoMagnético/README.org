@@ -1,9 +1,11 @@
 * Experimento 3: Campo magnético
+** Descripción de los contenidos
 - En Datos.xlsx se encuentran los datos obtenidos en el laboratorio con sus incertidumbres denotadas como $dX$ para la variable $X$.
 - En el 1-1.py se muestra el código para hallar las gráficas de $B_z$ para $r=0 mm$ variando el valor de $z$ para $a=R,\frac{R}{2},2R$.
 - En 1-2.py se muestra el código para hallar las gráficas de $B_z$ vs $z$ para $a=R$ y $r=0,100,140,160 mm$.
 - En 1-3.py se muestra el código para hallar las gráficas de $B_r$ vs $z$ para $a=R$ y $r=0,100,140,160mm$.
 - En 2-1.py se muestra el código para hallar el factor de calibración de las bobinas de Helmholtz y el módulo de la componente horizontal de campo magnético de la Tierra.
+- En diap.tex se encuentran lo usado para escribir el informe y las ecuaciones para hacer la presentación en PowerPoint(no sé usar PowerPoint:( ). 
 ** Sobre la organizacion de los datos en Datos.xlsx
 - En las hojas 1-3 se encuentran los datos correspondientes a $B_z$ vs $z$ para $r=0$ para $a=R,\frac{R}{2},2R$.
 - En las hojas 4-6 se encuentran los datos correspondientes a $B_z$ vs $z$ para $a=R$ y $r=0,100,140,160 mm$.
