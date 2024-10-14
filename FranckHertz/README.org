@@ -1,0 +1,2 @@
+* Lab 1: Experimento de Franck-Hertz
+Se encuentran los datos obtenidos para el obtenidos para el experimento de Franck-Hertz, así como el código para poder hallar los mínimos de las gráficas.
